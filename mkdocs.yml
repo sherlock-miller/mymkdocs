@@ -1,3 +1,19 @@
 site_name: 牛志浩的个人网站
+site_description: 牛志浩的个人主页，分享技术与生活
+site_author: 牛志浩
 
+# 使用 Material 主题（推荐，需执行 pip install mkdocs-material 安装）
+theme:
+  name: material
+  language: zh  # 设置语言为中文
+  features:
+    - navigation.tabs # 顶部导航栏样式
+    - navigation.sections
+    - search.suggest
+    - search.highlight
 
+# 网站结构导航
+nav:
+  - 首页: index.md
+  - 个人简介: about.md
+  - 博客文章: blog/

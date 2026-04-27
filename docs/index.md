@@ -1,17 +1,17 @@
-# Welcome to MkDocs
+# 你好，我是牛志浩 👋
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+欢迎来到我的个人网站！这里是我记录学习、工作和生活的地方。
 
-## Commands
+## 🎯 关于本站
+这个网站主要用于分享：
+- 🛠️ **技术笔记**：开发过程中的踩坑记录与心得
+- 📚 **阅读清单**：近期阅读的书籍和书评
+- 🚀 **项目展示**：我参与或独立开发的有趣项目
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## 🌟 最新动态
+> (这里可以列出你最近在做的事情)
+- [2025-06] 搭建完成了这个基于 MkDocs 的个人网站
+- [2025-05] 开始学习 Python 进阶课程
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+---
+*可以通过邮件联系我：your-email@example.com*

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="牛志浩 - 硬件工程师 | 个人网站">
+    <title>牛志浩 | 硬件工程师</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="cursor-follower"></div>
+
+    <canvas id="particle-canvas"></canvas>
+
+    <div class="floating-shapes" id="floating-shapes"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Niuzhihao</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">首页</a>
+                <a href="#about" class="nav-link">关于</a>
+                <a href="#skills" class="nav-link">技能</a>
+                <a href="#projects" class="nav-link">项目</a>
+                <a href="#timeline" class="nav-link">经历</a>
+                <a href="#contact" class="nav-link">联系</a>
+            </div>
+            <button class="nav-toggle" aria-label="菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span> 硬件工程师
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">你好，我是</span>
+                <span class="title-name glitch" data-text="牛志浩">牛志浩</span>
+            </h1>
+            <div class="hero-subtitle">
+                <span class="typing-prefix">我热衷于</span>
+                <span class="typing-text" id="typing-text"></span>
+                <span class="typing-cursor">|</span>
+            </div>
+            <p class="hero-desc">
+                专注于嵌入式系统与机器人技术，热爱将创意转化为现实的硬件作品
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <span>查看项目</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <span>联系我</span>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span class="scroll-text">向下滚动</span>
+        </div>
+    </section>
+
+    <section id="about" class="section about">
+        <div class="section-header">
+            <span class="section-number">01</span>
+            <h2 class="section-title">关于我</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="about-container">
+            <div class="about-image-wrapper">
+                <div class="about-image-placeholder">
+                    <div class="placeholder-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <circle cx="30" cy="22" r="10" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 52c0-10 8-18 18-18s18 8 18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <span>添加你的照片</span>
+                </div>
+                <div class="about-image-glow"></div>
+            </div>
+            <div class="about-text">
+                <h3>一位热爱技术的<span class="highlight">硬件工程师</span></h3>
+                <p>你好！我是牛志浩，专注于嵌入式系统开发和机器人技术。我相信硬件不仅是冰冷的电路，更是连接数字世界与物理世界的桥梁。</p>
+                <p>在这里，你可以看到我的项目作品、技术积累和成长轨迹。欢迎探索!</p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="8">0</span>
+                        <span class="stat-label">项目作品</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="3">0</span>
+                        <span class="stat-label">竞赛获奖</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="2">0</span>
+                        <span class="stat-label">年经验</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section skills">
+        <div class="section-header">
+            <span class="section-number">02</span>
+            <h2 class="section-title">技能栈</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <svg viewBox="0 0 40 40" fill="none"><rect x="6" y="8" width="28" height="24" rx="2" stroke="currentColor" stroke-width="2"/><path d="M6 12h28" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="22" r="4" stroke="currentColor" stroke-width="2"/><path d="M20 14v4M20 26v4M14 20h4M26 20h4" stroke="currentColor" stroke-width="1.5"/></svg>
+                </div>
+                <h3>嵌入式开发</h3>
+                <p>STM32 / Arduino / ESP32</p>
+                <div class="skill-bar"><div class="skill-progress" data-width="85%"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <svg viewBox="0 0 40 40" fill="none"><path d="M20 6L8 18l4 4 8-8 8 8 4-4L20 6z" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="20" r="3" stroke="currentColor" stroke-width="2"/><path d="M20 23v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><rect x="12" y="28" width="16" height="3" rx="1.5" fill="currentColor"/></svg>
+                </div>
+                <h3>机器人开发</h3>
+                <p>ROS / Gazebo / SLAM</p>
+                <div class="skill-bar"><div class="skill-progress" data-width="75%"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="2"/><path d="M20 6v28M6 20h28" stroke="currentColor" stroke-width="1" opacity="0.3"/><circle cx="20" cy="20" r="6" stroke="currentColor" stroke-width="2"/></svg>
+                </div>
+                <h3>电路设计</h3>
+                <p>Altium Designer / KiCad</p>
+                <div class="skill-bar"><div class="skill-progress" data-width="80%"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <svg viewBox="0 0 40 40" fill="none"><path d="M12 10l16 8-16 8V10z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><rect x="6" y="14" width="4" height="12" rx="1" stroke="currentColor" stroke-width="2"/></svg>
+                </div>
+                <h3>Python / C++</h3>
+                <p>算法 · 仿真 · 工具开发</p>
+                <div class="skill-bar"><div class="skill-progress" data-width="70%"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <svg viewBox="0 0 40 40" fill="none"><path d="M8 32V16a4 4 0 014-4h16a4 4 0 014 4v16" stroke="currentColor" stroke-width="2"/><path d="M12 32V16" stroke="currentColor" stroke-width="2"/><path d="M28 32V16" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="26" r="3" stroke="currentColor" stroke-width="2"/></svg>
+                </div>
+                <h3>FPGA / Verilog</h3>
+                <p>Xilinx · Vivado</p>
+                <div class="skill-bar"><div class="skill-progress" data-width="60%"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <svg viewBox="0 0 40 40" fill="none"><path d="M10 28V12l8 7-3 2M30 12v16l-8-7 3-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 28l12-16" stroke="currentColor" stroke-width="2"/></svg>
+                </div>
+                <h3>Git / Linux</h3>
+                <p>版本控制 · 系统管理</p>
+                <div class="skill-bar"><div class="skill-progress" data-width="75%"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects">
+        <div class="section-header">
+            <span class="section-number">03</span>
+            <h2 class="section-title">项目作品</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card" data-tilt>
+                <div class="project-image">
+                    <img src="images/1.jpg" alt="项目1" loading="lazy">
+                    <div class="project-overlay">
+                        <span class="project-view">查看详情 →</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>项目名称一</h3>
+                    <p>在这里添加项目的简短描述，介绍这个项目是什么以及它的亮点</p>
+                    <div class="project-tags">
+                        <span>STM32</span><span>ROS</span><span>C++</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tilt>
+                <div class="project-image">
+                    <img src="images/2.jpg" alt="项目2" loading="lazy">
+                    <div class="project-overlay">
+                        <span class="project-view">查看详情 →</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>项目名称二</h3>
+                    <p>在这里添加项目的简短描述，介绍这个项目是什么以及它的亮点</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>OpenCV</span><span>SLAM</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tilt>
+                <div class="project-image">
+                    <img src="images/3.jpg" alt="项目3" loading="lazy">
+                    <div class="project-overlay">
+                        <span class="project-view">查看详情 →</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>项目名称三</h3>
+                    <p>在这里添加项目的简短描述，介绍这个项目是什么以及它的亮点</p>
+                    <div class="project-tags">
+                        <span>FPGA</span><span>Verilog</span><span>Vivado</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tilt>
+                <div class="project-image">
+                    <img src="images/4.jpg" alt="项目4" loading="lazy">
+                    <div class="project-overlay">
+                        <span class="project-view">查看详情 →</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>项目名称四</h3>
+                    <p>在这里添加项目的简短描述，介绍这个项目是什么以及它的亮点</p>
+                    <div class="project-tags">
+                        <span>Altium</span><span>PCB</span><span>KiCad</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tilt>
+                <div class="project-image">
+                    <img src="images/5.jpg" alt="项目5" loading="lazy">
+                    <div class="project-overlay">
+                        <span class="project-view">查看详情 →</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>项目名称五</h3>
+                    <p>在这里添加项目的简短描述，介绍这个项目是什么以及它的亮点</p>
+                    <div class="project-tags">
+                        <span>ESP32</span><span>IoT</span><span>MQTT</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-tilt>
+                <div class="project-image">
+                    <img src="images/6.jpg" alt="项目6" loading="lazy">
+                    <div class="project-overlay">
+                        <span class="project-view">查看详情 →</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>项目名称六</h3>
+                    <p>在这里添加项目的简短描述，介绍这个项目是什么以及它的亮点</p>
+                    <div class="project-tags">
+                        <span>Arduino</span><span>传感器</span><span>PID</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="section timeline-section">
+        <div class="section-header">
+            <span class="section-number">04</span>
+            <h2 class="section-title">我的经历</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2024 - 至今</span>
+                    <h3>硬件工程师</h3>
+                    <p>在这里填写你的工作经历或实习经历</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2020 - 2024</span>
+                    <h3>本科 · 电子信息工程</h3>
+                    <p>在这里填写你的教育背景，学校名称和专业</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2023</span>
+                    <h3>机器人竞赛获奖</h3>
+                    <p>在这里填写竞赛名称、奖项等详细信息</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">2022</span>
+                    <h3>项目经历</h3>
+                    <p>在这里填写重要的项目或研究成果</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="section-header">
+            <span class="section-number">05</span>
+            <h2 class="section-title">联系我</h2>
+            <div class="section-line"></div>
+        </div>
+        <p class="contact-subtitle">如果你对我的项目感兴趣，或者想一起合作，欢迎随时联系</p>
+        <div class="contact-grid">
+            <a href="mailto:your-email@example.com" class="contact-card">
+                <div class="contact-icon">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <rect x="2" y="5" width="24" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                        <path d="M2 7l12 9 12-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <span class="contact-label">邮箱</span>
+                <span class="contact-value">your-email@example.com</span>
+            </a>
+            <a href="https://github.com/sherlock-miller" target="_blank" rel="noopener" class="contact-card">
+                <div class="contact-icon">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <path d="M10 24c-4 0-6-2-6-6V8a2 2 0 012-2h16a2 2 0 012 2v10a2 2 0 01-2 2h-8l-4 4z" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">sherlock-miller</span>
+            </a>
+            <a href="#" class="contact-card">
+                <div class="contact-icon">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <path d="M8 6h12a4 4 0 014 4v8a4 4 0 01-4 4H8a4 4 0 01-4-4v-8a4 4 0 014-4z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M8 10l6 4 6-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">添加链接</span>
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">NZH</span>
+                <span class="logo-bracket">/&gt;</span>
+            </div>
+            <p class="footer-text">© 2025 牛志浩. Made with <span class="heart">❤</span> & Code</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
