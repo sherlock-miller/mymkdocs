@@ -106,7 +106,7 @@
     }
 
     /* ============ Typewriter Effect ============ */
-    var words = ['嵌入式开发', '机器人技术', '电路设计', '开源硬件', 'FPGA开发'];
+    var words = ['智能机器人设计', '精密机械研发', 'AI+CAD工程应用', '国标工程制图', '机电联调'];
     var typingEl = document.getElementById('typing-text');
     var wordIndex = 0;
     var charIndex = 0;
